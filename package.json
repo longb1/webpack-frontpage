@@ -1,0 +1,22 @@
+{
+  "name": "webpack-frontpage",
+  "version": "1.0.0",
+  "description": "Learning webpack by creating a front page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longb1/webpack-frontpage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/longb1/webpack-frontpage/issues"
+  },
+  "homepage": "https://github.com/longb1/webpack-frontpage#readme",
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}
