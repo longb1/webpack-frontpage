@@ -8,10 +8,18 @@ function navBar(){
     for(let i=0;i<3;i++){
         const liItem= document.createElement("li");
         const liContent=document.createElement("a");
+        
 
         liContent.href=`#${navBarValues[i]}`;
         liContent.textContent=navBarValues[i];
-        liContent.id=`nav${navBarValues[i]}`;
+        liContent.setAttribute("content-selector",`#nav${navBarValues[i]}`);
+
+        liItem.addEventListener("click",function(){
+            const target=document.querySelector(liContent.dataset.contentSelector)
+            const isActive = document.querySelector('.active[data-tab-content]');
+            if (isActive) {target.classList.remove('active')}
+            target.classList.add('active');
+        })
         
         liItem.appendChild(liContent);
         ulList.appendChild(liItem);
@@ -23,7 +31,6 @@ container.appendChild(navBar());
 console.log(document.getElementById("navHome"))
 
 
-
 function homePage(){
     const homeContainer= document.createElement("div");
     const homeTitle=document.createElement("h1");
@@ -31,13 +38,14 @@ function homePage(){
 
     homeContainer.classList.add("active"); //shows by default
     homeContainer.setAttribute("data-tab-content","");
+    homeContainer.id="navHome";
 
     homeTitle.textContent="home page";
-    homePara.textContent="this is home page welcome"
+    homePara.textContent="this is home page welcome";
 
-    homeContainer.append(homeTitle,homePara)
-    container.append(homeContainer)
-    console.log(homeContainer)
+    homeContainer.append(homeTitle,homePara);
+    container.append(homeContainer);
+    console.log(homeContainer);
 
     return homeContainer
 }
