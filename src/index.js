@@ -37,8 +37,9 @@ function homePage(){
     const homeContainer= document.createElement("div");
     const homeTitle=document.createElement("h1");
     const homePara=document.createElement("p");
-    
+
     homeContainer.setAttribute("data-tab-content","");
+    homeContainer.classList.add("active")
     homeContainer.id="navHome";
 
     homeTitle.textContent="home page";
@@ -49,12 +50,13 @@ function homePage(){
     return homeContainer
 }
 
-container.appendChild(homePage());
-container.appendChild(navBar());
-
 function aboutPage(){
     
 }
 function contactPage(){
     
 }
+
+container.appendChild(navBar());
+
+container.appendChild(homePage());
