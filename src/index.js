@@ -14,16 +14,7 @@ function navBar(){
         liContent.textContent=navBarValues[i];
         liContent.setAttribute("data-tab-target",`#nav${navBarValues[i]}`)
         
-        liContent.addEventListener("click",function(){
-            const allActiveContent=document.querySelectorAll("[data-tab-content]");
-            const contentSelector=document.querySelector(liContent.dataset.tabTarget);
-
-            allActiveContent.forEach(element => {
-                element.classList.remove("active")
-            });
-            
-            contentSelector.classList.add("active")
-        })
+        
 
         liItem.appendChild(liContent);
         ulList.appendChild(liItem);
