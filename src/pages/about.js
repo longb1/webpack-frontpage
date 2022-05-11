@@ -3,7 +3,6 @@ function aboutPage(){
     const aboutTitle=document.createElement("h1");
     const aboutPara=document.createElement("p");
 
-    aboutContainer.setAttribute("data-tab-content","");
     aboutContainer.id="navAbout";
 
     aboutTitle.textContent="about page";

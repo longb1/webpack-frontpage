@@ -3,7 +3,6 @@ function contactPage(){
     const contactTitle=document.createElement("h1");
     const contactPara=document.createElement("p");
 
-    contactContainer.setAttribute("data-tab-content","");
     contactContainer.id="navContact";
 
     contactTitle.textContent="contact page";

@@ -3,8 +3,6 @@ function homePage(){
     const homeTitle=document.createElement("h1");
     const homePara=document.createElement("p");
 
-    homeContainer.setAttribute("data-tab-content","");
-    homeContainer.classList.add("active")
     homeContainer.id="navHome";
 
     homeTitle.textContent="home page";
