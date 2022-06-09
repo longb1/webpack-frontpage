@@ -30,12 +30,10 @@ module.exports = {
     ],
   },
   plugins: [
-
     new HtmlWebpackPlugin({
-
-      title: 'Output Management',
-
+      title: 'React UI',
+      filename: 'index.html',
+      template: 'src/index.html',
     }),
-
   ],
 };

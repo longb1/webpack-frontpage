@@ -1,2 +1,2 @@
 # webpack-frontpage
-Learning webpack by creating a front page
+Building a user interface using React, with Webpack.
