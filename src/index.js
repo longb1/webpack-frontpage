@@ -10,7 +10,7 @@ root.render(
    
     <div >
         <App/>
-        <FunctionComponent user="john" />
+        <FunctionComponent/>
     </div>   
    
 )

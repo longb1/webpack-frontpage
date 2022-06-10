@@ -1,9 +1,10 @@
 import React from 'react';
 export default function FunctionComponent(props){
+    const click=useState("GeeksForGeeks")
+
     return(
         <div style={{border: "2px dashed blue"}}>
-            <h2>Hello {props.user}</h2>
-            <h3>This component is made with a function</h3>
+            <h1>Welcome to {click}</h1>
         </div>
     );
 }
