@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('app'));
 root.render(
    
     <div >
-        <App title="poop"/>
+        <App/>
         <FunctionComponent user="john" />
     </div>   
    
