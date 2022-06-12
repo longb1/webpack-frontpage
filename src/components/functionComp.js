@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 export default function FunctionComponent(){
 
     const [defaultVal, updateVal] = useState(4)
+    console.log('hi')
+    useEffect(()=>{
+        console.log('defaultVal changed!')
+    }, [defaultVal]) //call function whenever defaultVal Changes
 
     function increment(){
         updateVal(prevCount=>prevCount+1)
