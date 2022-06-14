@@ -10,7 +10,10 @@ root.render(
    
     <div>
         <NavBar/>
-        <Container/>
+        <section>
+            <Container/>
+        </section>
+        
     </div>   
    
 )

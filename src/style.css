@@ -11,6 +11,11 @@ nav{
   justify-content: center;
 }
 
+section{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 
 #container{
   width:50vw;
@@ -27,8 +32,7 @@ nav{
 
 .location-info{
   left:150px;
-  border:2px solid red;
-  width:40vw;
+  width:100%;
   height:30vh;
   position:relative;
 }
