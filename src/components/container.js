@@ -1,11 +1,18 @@
 import React from 'react';
+import Cards from './card.js';
+import locations from '../data.js'
 
-export default function NavBar(){
-
+export default function Container(){
+    const proponents = locations.map(item=>{
+        
+        return(
+            <Cards item={item}/>
+        )
+    })
 
     return(
-        <nav>
-            <h1>My travel journal</h1>
-        </nav>
+        <div id="container">
+            {proponents}
+        </div>
     );
 }

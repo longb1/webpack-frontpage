@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import FunctionComponent from "./components/functionComp.js";
 import "./style.css"
 import NavBar from "./components/navbar.js";
+import Container from "./components/container.js";
 
 const root = ReactDOM.createRoot(document.getElementById('app'));
 
 root.render(
    
-    <div >
+    <div>
         <NavBar/>
-        <FunctionComponent/>
+        <Container/>
     </div>   
    
 )
