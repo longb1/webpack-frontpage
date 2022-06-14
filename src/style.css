@@ -1,5 +1,12 @@
-body{
+*{
   box-sizing: border-box;
-  margin:auto;
-  padding:10px;
+  margin:0;
+  padding:0;
+}
+
+nav{
+  background-color: brown;
+  height:10vh;
+  display:flex;
+  justify-content: center;
 }
