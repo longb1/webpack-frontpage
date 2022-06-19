@@ -1,22 +1,16 @@
 import React from 'react';
 
-export default function NavBar(){
-    const [darkTheme, setDarkTheme] = React.useState(false)
-
-    function handleChange(){
-        setDarkTheme(prevState => !prevState)
-
-    }
+export default function NavBar(props){
 
     return(
-        <nav>
+        <nav className={props.theme ? "dark-nav" : "light-nav"}>
             <h1>My travel journal</h1>
 
             <label class="switch">
                 <input 
                     type="checkbox"
-                    checked={darkTheme}
-                    onChange={handleChange}
+                    checked={props.checkValue}
+                    onChange={props.handleClick}
                 />
                 <span class="slider"></span>
             </label>
