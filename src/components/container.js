@@ -11,8 +11,11 @@ export default function Container(){
     })
 
     return(
-        <div id="container">
-            {proponents}
-        </div>
+        <section>
+            <div id="container">
+                {proponents}
+            </div>
+        </section>
+        
     );
 }
