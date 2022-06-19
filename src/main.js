@@ -13,7 +13,6 @@ export default function Main(){
         <div>
             <NavBar theme={darkTheme} handleClick={handleChange} checkValue={darkTheme}/>
             <Container theme={darkTheme}/>
-            <Form/>
         </div>   
     )
 }

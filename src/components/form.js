@@ -7,9 +7,10 @@ export default function Form() {
     
     function handleChange(event) {
         setFormData(prevFormData => {
+            const {name, value} = event
             return {
                 ...prevFormData,
-                [event.target.name]: event.target.value
+                [name]: value
             }
         })
     }

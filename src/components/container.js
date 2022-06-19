@@ -11,11 +11,9 @@ export default function Container(props){
     })
 
     return(
-        <section className={props.theme ? "dark-bg" : "light-bg"}>
-            <div id="container">
-                {proponents}
-            </div>
-        </section>
+        <div className={props.theme ? "dark-bg" : "light-bg"} id="container">
+            {proponents}
+        </div>
         
     );
 }

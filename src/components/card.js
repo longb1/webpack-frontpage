@@ -3,7 +3,7 @@ import React from 'react';
 export default function Cards(props){
 
     return(
-        <div className="card">
+        <div className="card" >
             <img src={`${props.item.imageUrl}`} className="card-image" />
             <div className="location-info">
                 <p>{props.item.location} <a href={`${props.item.googleMapsUrl}`}>View on Google Maps</a></p>
